@@ -1,0 +1,58 @@
+{
+    "menuTitle": "季節限定",
+
+
+    "menuList": [
+       {
+          "name": "莓好時光",
+          "price": "NT $55",
+          "image": "https://github.com/yoruki1104/App-finalterm/blob/master/img/menu_img/img_season1.png?raw=true",
+          "sweet": "全糖",
+          "cup": 0,
+          "ice": "正常",
+          "size":"M"
+          
+       },
+       {
+        "name": "番茄梅",
+        "price": "NT $40",
+        "image": "https://github.com/yoruki1104/App-finalterm/blob/master/img/menu_img/img_season2.png?raw=true",
+        "sweet": "全糖",
+        "cup": 0,
+        "ice": "正常",
+        "size":"M"
+        
+     },
+       {
+          "name": "芭樂檸檬",
+          "price": "NT $40",
+          "image": "https://github.com/yoruki1104/App-finalterm/blob/master/img/menu_img/img_season3.png?raw=true",
+          "sweet": "全糖",
+          "cup": 0,
+          "ice": "正常",
+          "size":"M"
+        
+       },
+       {
+        "name": "酪梨布丁鮮奶",
+        "price": "NT $65",
+        "image": "https://github.com/yoruki1104/App-finalterm/blob/master/img/menu_img/img_season4.png?raw=true",
+        "sweet": "全糖",
+        "cup": 0,
+        "ice": "正常",
+        "size":"M"
+      
+        
+     },
+     {
+        "name": "芋頭鮮奶",
+        "price": "NT $55",
+        "image": "https://github.com/yoruki1104/App-finalterm/blob/master/img/menu_img/img_season5.png?raw=true",
+        "sweet": "全糖",
+        "cup": 0,
+        "ice": "正常",
+        "size":"M"
+       
+        
+     }
+ ]}

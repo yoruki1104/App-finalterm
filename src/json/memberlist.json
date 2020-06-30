@@ -1,0 +1,36 @@
+{
+    "name":"茶蘼",
+    "memberList":[
+        {
+            "img":"https://raw.githubusercontent.com/ntue110719041/mid/master/img/account_box-black-24dp%201.png",
+            "text":"我的卡片",
+            "margin":181
+        },
+        {
+            "img":"https://raw.githubusercontent.com/ntue110719041/mid/master/img/local_activity-black-24dp%201.png",
+            "text":"優惠卷",
+            "margin":197
+        },
+        {
+            "img":"https://raw.githubusercontent.com/ntue110719041/mid/master/img/ballot-black-24dp%201.png",
+            "text":"電子發票",
+            "margin":181
+        },
+        {
+            "img":"https://raw.githubusercontent.com/ntue110719041/mid/master/img/settings-black-24dp%201.png",
+            "text":"設定",
+            "margin":213
+        },
+        {
+            "img":"https://raw.githubusercontent.com/ntue110719041/mid/master/img/local_phone-black-24dp%201.png",
+            "text":"客服專區",
+            "margin":181
+        },
+       {
+            "img":"https://raw.githubusercontent.com/ntue110719041/mid/master/img/directions_run-black-24dp%201.png",
+            "text":"登出",
+            "margin":213
+       }
+    ]
+   
+}

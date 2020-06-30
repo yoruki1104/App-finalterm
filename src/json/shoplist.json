@@ -1,0 +1,29 @@
+[
+    {
+        "shopname":"科技大樓門市",
+        "distance":"0.5公里",
+        "address":"106台北市大安區復興南路二段235號",
+        "tel":"02-1234-5678",
+        "week":"星期一~星期日",
+        "time":"9:00~22:00",
+        "link":"https://goo.gl/maps/sy1EMvUQmp66DUq77"
+    },
+    {
+        "shopname":"大安門市",
+        "distance":"1公里",
+        "address":"106台北市大安區信義路四段2號",
+        "tel":"02-9876-5432",
+        "week":"星期一~星期日",
+        "time":"9:00~22:30",
+        "link":"https://goo.gl/maps/gLQRejGY8KADpPQw6"
+    },
+    {
+        "shopname":"大安森林公園門市",
+        "distance":"2公里",
+        "address":"10656臺北市大安區信義路3段100號",
+        "tel":"02-1357-2468",
+        "week":"星期一~星期日",
+        "time":"9:30~22:00",
+        "link":"https://goo.gl/maps/enKvu3uRBrhKxHWX6"
+    }
+]

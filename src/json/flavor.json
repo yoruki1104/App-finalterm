@@ -1,0 +1,55 @@
+{
+    "menuTitle": "特調",
+ 
+    "menuList": [
+       {
+          "name": "養樂多綠茶",
+          "price": "NT $45",
+          "image": "https://github.com/yoruki1104/App-finalterm/blob/master/img/menu_img/img_flavor1.png?raw=true",
+          "sweet": "全糖",
+          "cup": 0,
+          "ice": "正常",
+          "size":"M"
+
+          
+       },
+       {
+        "name": "甘蔗青茶",
+        "price": "NT $45",
+        "image": "https://github.com/yoruki1104/App-finalterm/blob/master/img/menu_img/img_flavor2.png?raw=true",
+        "sweet": "全糖",
+        "cup": 0,
+        "ice": "正常",
+        "size":"M"
+        
+     },
+       {
+          "name": "冰萃檸檬",
+          "price": "NT $40",
+          "image": "https://github.com/yoruki1104/App-finalterm/blob/master/img/menu_img/img_flavor3.png?raw=true",
+          "sweet": "全糖",
+          "cup": 0,
+          "ice": "正常",
+          "size":"M"
+       },
+       {
+        "name": "冰糖洛神梅",
+        "price": "NT $35",
+        "image": "https://github.com/yoruki1104/App-finalterm/blob/master/img/menu_img/img_flavor4.png?raw=true",
+        "sweet": "全糖",
+        "cup": 0,
+        "ice": "正常",
+        "size":"M"
+        
+     },
+     {
+        "name": "柳丁綠茶",
+        "price": "NT $35",
+        "image": "https://github.com/yoruki1104/App-finalterm/blob/master/img/menu_img/img_flavor5.png?raw=true",
+        "sweet": "全糖",
+        "cup": 0,
+        "ice": "正常",
+        "size":"M"
+        
+     }
+ ]}

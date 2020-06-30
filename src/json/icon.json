@@ -1,0 +1,32 @@
+{
+    "M-btn-selected": "https://github.com/yoruki1104/APP-midterm/blob/master/img/img-menu/btn_M-selected.png?raw=true",
+    "M-btn-unselected": "https://github.com/yoruki1104/APP-midterm/blob/master/img/img-menu/btn_M-unselected.png?raw=true",
+    "L-btn-selected": "https://github.com/yoruki1104/APP-midterm/blob/master/img/img-menu/btn_L-selected.png?raw=true",
+    "L-btn-unselected": "https://github.com/yoruki1104/APP-midterm/blob/master/img/img-menu/btn_L-unselected.png?raw=true",
+    "add-btn":"https://github.com/yoruki1104/App-finalterm/blob/master/img/icon/icon_add.png?raw=true",
+    "delete-btn":"https://github.com/yoruki1104/App-finalterm/blob/master/img/icon/icon_delete.png?raw=true",
+    "shopping-cart":"https://github.com/yoruki1104/App-finalterm/blob/master/img/icon/icon_cart.png?raw=true" ,
+    "add-shopping-cart":"https://github.com/yoruki1104/App-finalterm/blob/master/img/icon/icon_add_cart.png?raw=true" ,
+    "logo":"https://raw.githubusercontent.com/yoruki1104/APP-midterm/master/img/icon-header/icon_logo.png",
+    "back":"https://github.com/yoruki1104/APP-midterm/blob/master/img/icon-header/btn_back.png?raw=true",
+    "unfold":"https://github.com/yoruki1104/App-finalterm/blob/master/img/icon/icon_unfold.png?raw=true",
+   
+
+    "change":"https://github.com/ciel0412/mid/blob/master/img/img_change.png?raw=true",
+    "assignment":"https://raw.githubusercontent.com/ntue110719041/mid/master/img/assignment_ind-white-24dp%201.png",
+   
+
+    "mail":"https://raw.githubusercontent.com/ntue110719041/mid/master/img/email-white-24dp%201.png",
+    "personal":"https://raw.githubusercontent.com/ntue110719041/mid/master/img/account_circle-black-36dp%201.png",
+    "arrow":"https://raw.githubusercontent.com/ntue110719041/mid/master/img/keyboard_arrow_right-black-24dp%201.png",
+    
+
+    "search":"https://raw.githubusercontent.com/ntue110719041/mid/master/img/search-black-24dp%201%20(1).png",
+    "shop":"https://raw.githubusercontent.com/ntue110719041/mid/master/img/store-24px%201.png",
+    "information":"https://raw.githubusercontent.com/ntue110719041/mid/master/img/info-24px%201.png",
+
+    "account":"https://github.com/yoruki1104/App-finalterm/blob/master/img/icon/icon_login_account.png?raw=true",
+    "code":"https://github.com/ciel0412/assign/blob/master/img-assign/code.png?raw=true",
+    "logoimg":"https://github.com/ciel0412/assign/blob/master/img-assign/logo.png?raw=true",
+    "lock":"https://github.com/yoruki1104/App-finalterm/blob/master/img/icon/icon_login_password.png?raw=true"
+}
