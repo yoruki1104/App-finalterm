@@ -1,46 +1,120 @@
 import React, {useState} from 'react';
-import {Button, Text, View} from 'react-native';
+import {Button, Text, View,Image} from 'react-native';
 import Modal from 'react-native-modal';
-
 import{useRef} from 'react';
-import { Animated, Easing,StyleSheet,ToastAndroid, Alert } from 'react-native';
+import { Animated, Easing,StyleSheet,ToastAndroid, Alert,TouchableOpacity  } from 'react-native';
 import LottieView from 'lottie-react-native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import icon from"../json/icon.json"
+
+  
 
 function ModalTester() {
   const [isModalVisible, setModalVisible] = useState(false);
-  
   const toggleModal = () => {
     setModalVisible(!isModalVisible);
   };
   const animation=useRef(null);
   const onPress=()=>{
     animation.current.play();
+
   };
-  
+  const fadeAnim = useRef(new Animated.Value(0)).current;
+
+  const fadeIn = () => {
+    // Will change fadeAnim value to 1 in 5 seconds
+    Animated.timing(fadeAnim, {
+      toValue: 1,
+      duration: 2000
+    }).start();
+  };
+  const fadeIn3000 = () => {
+    // Will change fadeAnim value to 1 in 5 seconds
+    Animated.timing(fadeAnim, {
+      toValue: 1,
+      duration: 3000
+    }).start();
+  };
+  const fadeOut = () => {
+    // Will change fadeAnim value to 0 in 5 seconds
+    Animated.timing(fadeAnim, {
+      toValue: 0,
+      duration: 10
+    }).start();
+  };
+  const onPressFadeIn=()=>{
+     onPress();
+    fadeIn();
+
+  };
+  const toggleFadeOut=()=>{
+   
+   fadeOut();
+   toggleModal();
+
+ };
+
+ const FadeOutIn=()=>{
+   
+   fadeOut();
+   onPress();
+   fadeIn3000();
+
+ };
     return (
       <View style={{flex: 1}}>
-        <Button title="Show modal" onPress={toggleModal} />
+        <TouchableOpacity 
+            
+            onPress={toggleModal} >
+            <Image source={{uri:icon.change}}
+               style={{width:24,height:24}}/>
+        </TouchableOpacity>
+        
 
-        <Modal isVisible={isModalVisible}>
-          <View style={{flex: 1}}>
+        <Modal isVisible={isModalVisible}
+            animationInTiming={1200}
+            animationOutTiming={1000}
+        >
+          <View style={{flex: 1,justifyContent:"center", alignItems:"center"}}>
           <View style={styles.container}>
              <LottieView 
                  ref={animation}
                  source={require('../json/animation.json')}
                  loop={false}
             />
-
-
-            <Button style={{color:"#fff",width:30,height:30,backgroundColor:"red"}} title="今天要喝什麼呢?" onPress={onPress} />
+            <TouchableOpacity 
+                style={{width:200,height:40,backgroundColor:"#F9D9A6",borderRadius:20,justifyContent:"center"}}
+                onPress={onPressFadeIn}>
+                     <Text style={styles.playBtnText}>今天要喝什麼呢?</Text>
+            </TouchableOpacity>
           
-      </View>
-            <Text style={{color:"#fff",fontSize:20,textAlign:"center"}}>珍珠奶茶</Text>
+            </View>
+       
+            <Animated.View
+                style={[
+                 styles.fadingContainer,
+                 {
+                     opacity: fadeAnim // Bind opacity to animated value
+                 }
+                 ]}
+                >
+                <Text style={styles.fadingText}>珍珠奶茶</Text>
+             </Animated.View>
+             
+            <View  style={{ alignItems:"center",}}>
+                <TouchableOpacity style={{width:200,height:40,backgroundColor:"#40230E",borderRadius:20, justifyContent:"center",}}  
+                onPress={toggleFadeOut}>
+                     
+                    <Text style={styles.addCartBtnText}>好哇，加入購物車</Text>
+                   
+                </TouchableOpacity>
+                <TouchableOpacity style={{width:200,height:40,backgroundColor:"#40230E",borderRadius:20, justifyContent:"center",marginTop:15}}  
+                onPress={FadeOutIn}>
+                     
+                    <Text style={styles.addCartBtnText}>不要，重新選擇</Text>
+                   
+                </TouchableOpacity>
+            </View>
             
-            <Button title="好哇，加入購物車" onPress={toggleModal} 
-            
-            
-            />
           </View>
         </Modal>
       </View>
@@ -51,16 +125,41 @@ const styles=StyleSheet.create({
     container:{
       width:320,
       height:360,
+      alignItems:"center",
+      
       
     },
-    button:{
-      width:50,
-      height:50,
-      backgroundColor:"#F9D9A6",
-      marginLeft:50,
-      marginTop:100,
-      
-    }
-  
+    playBtnText:{
+        color:"#40230E",
+        fontSize:16,
+        textAlign:"center",
+        justifyContent:"center",
+       fontWeight:"bold",
+        fontFamily:"segoeui"
+    },
+    addCartBtnText:{
+        color:"#F9D9A6",
+        fontSize:16,
+        textAlign:"center",
+        justifyContent:"center",
+        marginTop:0, 
+        fontFamily:"segoeui",
+    },
+    fadingContainer: {
+        paddingVertical: 8,
+        paddingHorizontal: 16,
+        marginTop:-80,
+        marginBottom:20
+      },
+      fadingText: {
+        color:"#fff",
+        fontSize:20,
+        textAlign:"center",
+        fontFamily:"segoeui"
+      },
+      buttonRow: {
+        flexDirection: "row",
+        marginVertical: 16
+      }
   })
 export default ModalTester;

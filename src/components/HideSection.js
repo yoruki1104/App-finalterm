@@ -42,7 +42,7 @@ const HideSection= ({ expanded }) => {
   return (
      
 
-    <View style={{ marginLeft:16,marginTop:-6}}>
+    <View style={{marginTop:-6,alignSelf:'center'}}>
     <View style={[styles.buttonSecStyle, { height },{opacity}]}>
                    
                    <View style={[styles.buttonGroupStyle]}>

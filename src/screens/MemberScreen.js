@@ -32,17 +32,20 @@ const SettingsScreen = ({ navigation }) => {
               <Image source={{uri:icon.logo}}
                style={{width: 71, height: 30}}/>
           </View>
-          <TouchableOpacity style={styles.headerMiddle}>
+         < View style={styles.headerRight}>
+            <TouchableOpacity>
               <Image source={{uri:icon["mail"] }}
                 style={{width: 24, height: 24}}/>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.headerRight} onPress={() => navigation.push('LoginScreen')}>
+              </TouchableOpacity>
+             <TouchableOpacity  onPress={() => navigation.push('LoginScreen')}>
                 <Image source={{uri:icon["assignment"] }}
                 style={{width: 24, height: 24}}/>
-          </TouchableOpacity>
+             </TouchableOpacity>
+         </View>
+        
        
       </View>
-        <ScrollView>
+        <ScrollView style={{alignSelf:"center"}}>
         <TouchableOpacity style={styles.personal}>
         <Image source={{uri:icon["personal"]}} style={{width: 36, height: 36}}/>
         <TextInput 
@@ -70,7 +73,7 @@ const styles = StyleSheet.create({
   headerContentStyle:{
       height: 80 ,
       backgroundColor: "#40230D",
-      justifyContent: "flex-start",
+      justifyContent: "space-between",
       alignItems: "center",
       flexDirection:"row",
       elevation: 2,
@@ -80,11 +83,12 @@ const styles = StyleSheet.create({
       width: "20%",
       paddingLeft:16,
   },
-  headerMiddle:{
-      marginLeft:200,
-  },
+  
   headerRight:{
-      marginLeft:21,
+    flexDirection:"row",
+    paddingRight:16,
+    width:"22%",
+    justifyContent:"space-between"
   },
   titleStyle:{
       
@@ -97,7 +101,7 @@ const styles = StyleSheet.create({
       height:53,
       alignItems: "center",
       flexDirection:"row",
-      marginLeft:25,
+      marginLeft:14,
       
   },
   textname:{

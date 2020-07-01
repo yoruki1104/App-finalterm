@@ -105,7 +105,7 @@ const App = () => {
             },
           }}
         >
-          <Tab.Screen name="首頁" component={HomeScreen} />
+          <Tab.Screen name="首頁" component={HomeStack} />
           <Tab.Screen name="菜單" component={ MenuScreen} />
           <Tab.Screen name="門市" component={StoreScreen} />
           <Tab.Screen name="會員" component={MemberStack} />
@@ -123,6 +123,30 @@ const MemberStack = () => {
         <Stack.Screen 
           name="會員" 
           component={MemberScreen} 
+          options={{
+          
+            headerShown: false
+          }}
+        />
+         <Stack.Screen 
+          name="LoginScreen" 
+          component={LoginScreen} 
+          options={{
+           
+            headerShown: false
+          }}
+        />
+     
+      </Stack.Navigator>
+  );
+}
+const HomeStack = () => {
+  return (
+   <Stack.Navigator>
+     
+        <Stack.Screen 
+          name="首頁" 
+          component={HomeScreen} 
           options={{
           
             headerShown: false

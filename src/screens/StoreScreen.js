@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { useState, useEffect } from "react";
 import { ScrollView } from 'react-native';
-import { Image,StyleSheet,TouchableOpacity,View,Text,FlatList,TextInput} from 'react-native';
+import { Image,StyleSheet,TouchableOpacity,View,Text,FlatList,TextInput,Dimensions } from 'react-native';
 import icon from "../json/icon.json"
 import shoplist from'../json/shoplist.json';
 import ShopDetail from'../components/ShopDetail';
@@ -12,7 +12,7 @@ import mapStyle from "../json/mapStyle.json";
 
 // Make a component
 const MeScreen = ({ navigation }) => {
-
+  const screenWidth = Math.round(Dimensions.get('window').width);
   const [region, setRegion] = useState({
     longitude: 121.544637,
     latitude: 25.024624,
@@ -88,7 +88,7 @@ const MeScreen = ({ navigation }) => {
         </TouchableOpacity>
       </View>
       <ScrollView>
-      <MapView style={{height:230,width:360}}
+      <MapView style={{height:230,width:screenWidth,alignSelf:"center"}}
         region={region}
         showsTraffic
         onRegionChangeComplete={onRegionChangeComplete}
@@ -110,17 +110,20 @@ const MeScreen = ({ navigation }) => {
           </Marker>
         ))}
         </MapView>
-      <View style={{flexDirection:"row",}}>
-       <Image source={{uri:icon.shop}} style={{width:24,height:24,marginLeft:16,marginTop:9,marginBottom:8}}/>
-       <Text style={{fontSize:16,color:"#40230E",marginLeft:3,marginTop:10,marginBottom:10,fontFamily:"segoeui",}}>附近門市</Text>
-      </View>
-      <FlatList data={shoplist} 
-    renderItem={({item})=> <ShopDetail
-    shoplist={item}
-    navigation={navigation}
-    />}
-    keyExtractor={(item,index) => index.toString()}
-    />
+        <View style={{alignSelf:'center'}}>
+            <View style={{flexDirection:"row", }}>
+                <Image source={{uri:icon.shop}} style={{width:24,height:24,marginTop:9,marginBottom:8}}/>
+               <Text style={{fontSize:16,color:"#40230E",marginLeft:3,marginTop:10,marginBottom:10,fontFamily:"segoeui",}}>附近門市</Text>
+             </View>
+            <FlatList data={shoplist} 
+                renderItem={({item})=> <ShopDetail
+                shoplist={item}
+                navigation={navigation}
+              />}
+                keyExtractor={(item,index) => index.toString()}
+            />
+        </View>
+      
     </ScrollView>
       </View>
     );
@@ -141,7 +144,7 @@ const styles = StyleSheet.create({
   },
   headerMiddle:{
 
-      width: 210,
+      width: "60%",
       height:30,
       alignItems: "center",
       flexDirection:"row",

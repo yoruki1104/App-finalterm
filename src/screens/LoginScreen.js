@@ -69,8 +69,8 @@ const LoginScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
     scroview:{
         backgroundColor:"#F9D9A6",
-        flex:1
-   
+        flex:1,
+        alignSelf:'center'
         
     },
        logo:{
@@ -85,11 +85,11 @@ const styles = StyleSheet.create({
        mycard:{
          width:312,
          height:50,
-         marginLeft:22,
+         
          backgroundColor:"#FFFFFF",
          alignItems: "center",
          flexDirection:"row",
-        
+         alignSelf:'center',
          marginTop:20,
          borderRadius:10,
    
@@ -119,8 +119,9 @@ const styles = StyleSheet.create({
        backgroundColor:"#40230D",
        alignItems:"center",
        borderRadius:10,
-       marginLeft:20,
+      
        marginTop:20,
+       alignSelf:'center'
        
    },
    inname:{
